@@ -23,7 +23,7 @@ SmartCart Rules is a portfolio-grade WooCommerce extension for configurable paym
 - PHP 7.4 or later
 - Classic WooCommerce Cart and Checkout pages
 
-WooCommerce Cart and Checkout Blocks are intentionally not declared compatible in version 1.0.0.
+WooCommerce Cart and Checkout Blocks are intentionally not declared compatible in version 1.0.1.
 
 ## Installation
 
