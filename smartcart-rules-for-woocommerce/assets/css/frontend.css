@@ -1,0 +1,146 @@
+.scrw-coupon-actions {
+	display: block !important;
+	clear: both;
+	width: 100%;
+	margin-top: 12px;
+}
+
+.woocommerce-info.scrw-notice.scrw-coupon-conflict {
+	display: block !important;
+	text-align: start;
+}
+
+.scrw-coupon-conflict .scrw-notice-text {
+	display: block;
+	width: 100%;
+}
+
+.woocommerce-info.scrw-notice .scrw-remove-coupon.button {
+	display: flex !important;
+	float: none !important;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 100%;
+	min-height: 38px;
+	margin: 0;
+	padding: 7px 16px;
+	border: 1px solid rgba(255, 255, 255, 0.9);
+	border-radius: 6px;
+	background: #fff;
+	box-shadow: none;
+	color: #176f9f;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1.6;
+	white-space: normal;
+	word-break: normal;
+	text-decoration: none;
+	transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.woocommerce-info.scrw-notice .scrw-remove-coupon.button:hover,
+.woocommerce-info.scrw-notice .scrw-remove-coupon.button:focus {
+	border-color: #123047;
+	background: #123047;
+	color: #fff;
+	transform: translateY(-1px);
+}
+
+.scrw-toast {
+	position: fixed;
+	left: 50%;
+	right: auto;
+	bottom: 26px;
+	z-index: 999999;
+	width: min(480px, calc(100vw - 36px));
+	padding: 15px 20px 15px 48px;
+	border: 1px solid #e4b444;
+	border-top: 4px solid #e4b444;
+	border-radius: 10px;
+	background: #fffdf8;
+	box-shadow: 0 10px 28px rgba(31, 31, 31, 0.18);
+	color: #262626;
+	direction: inherit;
+	text-align: start;
+	font-size: 13px;
+	line-height: 1.8;
+	opacity: 0;
+	visibility: hidden;
+	transform: translate(-50%, 18px);
+	pointer-events: none;
+	transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
+}
+
+.scrw-toast.scrw-toast-visible {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(-50%, 0);
+	pointer-events: auto;
+}
+
+.scrw-toast-content strong {
+	display: block;
+	margin-bottom: 3px;
+	color: #171717;
+	font-size: 14px;
+}
+
+.scrw-toast-line {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: baseline;
+	gap: 0 4px;
+	margin-top: 2px;
+	direction: inherit;
+}
+
+.scrw-toast-number {
+	direction: ltr;
+	unicode-bidi: isolate;
+	white-space: nowrap;
+	font-variant-numeric: tabular-nums;
+}
+
+.scrw-toast-currency,
+.scrw-toast-only {
+	white-space: nowrap;
+}
+
+.scrw-toast .scrw-toast-close {
+	position: absolute;
+	top: 8px !important;
+	left: 10px !important;
+	right: auto !important;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	border: 1px solid #e7dfcd;
+	border-radius: 50%;
+	background: #fff;
+	color: #5d5139;
+	font-size: 21px;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.scrw-toast .scrw-toast-close:hover,
+.scrw-toast .scrw-toast-close:focus {
+	border-color: #e4b444;
+	background: #fff7e2;
+	color: #1f1f1f;
+}
+
+@media (max-width: 600px) {
+	.scrw-toast {
+		left: 50%;
+		right: auto;
+		bottom: 78px;
+		width: calc(100vw - 32px);
+		font-size: 13px;
+	}
+}
